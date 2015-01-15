@@ -8,7 +8,7 @@ alias -g M='| less'
 
 # Bundler
 alias be='bundle exec'
-asias b="bundle"
+alias b="bundle"
 
 # Rails
 alias m="migrate"
