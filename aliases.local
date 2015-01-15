@@ -1,0 +1,20 @@
+# Unix
+alias -g G='| grep'
+alias -g M='| less'
+alias l='ls'
+alias ll='ls -al'
+alias mkdir='mkdir -p'
+alias -g M='| less'
+
+# Bundler
+alias be='bundle exec'
+asias b="bundle"
+
+# Rails
+alias m="migrate"
+alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias rk="rake"
+alias s="rspec"
+
+# Pretty print path
+alias path="echo $PATH | tr -s ':' '\n'"

@@ -1,0 +1,51 @@
+" Use Vim settings, rather then Vi settings. This setting must be as early as
+" possible, as it has side effects.
+set nocompatible
+
+" Color scheme
+color codeschool
+
+" Set font size & type
+set guifont=Monaco:h12
+
+" Leader
+let mapleader = " "
+
+set backspace=2     " Backspace deletes like most programs in insert mode
+set nobackup
+set nowritebackup
+set noswapfile      " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
+set history=50
+set ruler           " show the cursor position all the time
+set showcmd         " display incomplete commands
+set incsearch       " do incremental searching
+set laststatus=2    " Always display the status line
+set autowrite       " Automatically :write before running commands
+set guioptions-=r   " remove right-hand scroll bar
+set guioptions-=L   " remove left-hand scroll bar
+set relativenumber  " Set relative line numbering
+set hlsearch        " Highlight all matches after entering a search pattern
+set ignorecase      " Case insensitive pattern matching
+set smartcase       " Overrides ignorecare if pattern contains upcase
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+" NERDTree settings
+" #################
+"
+" Load on startup
+let g:NERDTreeWinPos = "right"
+
+" Open NERDTREE with Ctrl + n
+map <C-n> :NERDTreeToggle<CR>
+
+" Closing last window, closes vim
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
