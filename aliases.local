@@ -16,5 +16,8 @@ alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias rk="rake"
 alias s="rspec"
 
+# Ctags
+alias ctags="ctags -R --exclude=.git --exclude=log *"
+
 # Pretty print path
 alias path="echo $PATH | tr -s ':' '\n'"
