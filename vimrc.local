@@ -27,6 +27,7 @@ set relativenumber  " Set relative line numbering
 set hlsearch        " Highlight all matches after entering a search pattern
 set ignorecase      " Case insensitive pattern matching
 set smartcase       " Overrides ignorecare if pattern contains upcase
+set tags=./tags     " Set the tag file order
 
 " Make it obvious where 80 characters is
 set textwidth=80
