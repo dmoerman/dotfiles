@@ -3,5 +3,5 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 
-" Run tests from within vim
-Plugin 'tpope/vim-dispatch'
+Plugin 'rking/ag.vim' " Ag support for vim
+Plugin 'tpope/vim-dispatch' " Run tests from within vim
