@@ -1,13 +1,13 @@
 # Unix
-alias -g G='| grep'
-alias -g M='| less'
-alias l='ls'
-alias ll='ls -al'
-alias mkdir='mkdir -p'
-alias -g M='| less'
+alias -g G="| grep"
+alias -g M="| less"
+alias l="ls"
+alias ll="ls -al"
+alias mkdir="mkdir -p"
+alias -g M="| less"
 
 # Bundler
-alias be='bundle exec'
+alias be="bundle exec"
 alias b="bundle"
 
 # Rails
@@ -15,6 +15,7 @@ alias m="migrate"
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias rk="rake"
 alias s="rspec"
+alias annotate="annotate --position after --show-indexes --exclude tests,fixtures,factories"
 
 # Ctags
 alias ctags="ctags -R --exclude=.git --exclude=log *"

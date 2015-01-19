@@ -1,6 +1,8 @@
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
+" Enable matching/closing types when using %
+runtime macros/matchit.vim
 
 " Color scheme
 color codeschool
@@ -50,3 +52,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Closing last window, closes vim
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Execute rspec in current bundle context
+let g:rspec_command = "!bundle exec rspec {spec}" " Run Rspec in current context
