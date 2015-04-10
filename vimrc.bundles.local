@@ -5,3 +5,4 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'rking/ag.vim' " Ag support for vim
 Plugin 'tpope/vim-dispatch' " Run tests from within vim
+Plugin 'christoomey/vim-tmux-navigator' " Tmux vim awareness
