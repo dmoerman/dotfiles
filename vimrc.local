@@ -4,9 +4,6 @@ set nocompatible
 " Enable matching/closing types when using %
 runtime macros/matchit.vim
 
-" Color scheme
-color codeschool
-
 " Set font size & type
 set guifont=Monaco:h12
 
@@ -41,17 +38,8 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" NERDTree settings
-" #################
-"
 " Load on startup
 let g:NERDTreeWinPos = "right"
 
 " Open NERDTREE with Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
-
-" Closing last window, closes vim
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Execute rspec in current bundle context
-let g:rspec_command = "!bundle exec rspec {spec}" " Run Rspec in current context
