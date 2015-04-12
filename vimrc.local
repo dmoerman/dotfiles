@@ -32,11 +32,16 @@ set tags=./tags     " Set the tag file order
 set textwidth=80
 set colorcolumn=+1
 
+" Automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+" zoom a vim pane, <C-w>= te re-balance
+nnoremap <leader>= :wincmd =<cr>
 
 " Load on startup
 let g:NERDTreeWinPos = "right"

@@ -15,6 +15,12 @@ bind-key r source-file ~/dotfiles-local/tmux.conf.local \; display-message '~/do
 # Create new tmux window from current pane directory context
 bind c new-window -c '#{pane_current_path}'
 
+# Kill tmux session
+bind-key K run-shell 'tmux switch-client -n \; kill-session -t "$(tmux display-message -p "#$")" || tmux kill-session'
+
+# Select tmux session based on title fuzzy search (dependency: sed, fzf)
+bind-key C-j split-window -v "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#$')\$\" | fzf --reverse | xargs tmux switch-client -t "
+
 # Move tmux pane to window pane
 bind-key b break-pane -d
 
