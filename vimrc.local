@@ -47,7 +47,7 @@ nnoremap <leader>= :wincmd =<cr>
 let g:NERDTreeWinPos = "right"
 
 " Vim rspec
-let g:rspec_command = "!bundle exec rspec --drb {spec}"
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 
 " Open NERDTREE with Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
