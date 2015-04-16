@@ -46,5 +46,8 @@ nnoremap <leader>= :wincmd =<cr>
 " Load on startup
 let g:NERDTreeWinPos = "right"
 
+" Vim rspec
+let g:rspec_command = "!bundle exec rspec --drb {spec}"
+
 " Open NERDTREE with Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
