@@ -7,3 +7,5 @@ Plugin 'rking/ag.vim' " Ag support for vim
 Plugin 'tpope/vim-dispatch' " Run tests from within vim
 Plugin 'christoomey/vim-tmux-navigator' " Tmux vim awareness
 Plugin 'jgdavey/tslime.vim' " Tmux dispatcher
+Plugin 'mxw/vim-jsx' " Jsx support for vim
+Plugin 'gertjanreynaert/cobalt2-vim-theme'

@@ -1,3 +1,4 @@
+colorscheme cobalt2 " Colorscheme cobal2
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
@@ -48,6 +49,8 @@ let g:NERDTreeWinPos = "right"
 
 " Vim rspec
 let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " Open NERDTREE with Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
