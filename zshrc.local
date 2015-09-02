@@ -7,8 +7,6 @@ eval "$(rbenv init - --no-rehash)"
 # Load nvm
 source $(brew --prefix nvm)/nvm.sh
 export PATH="$PATH:/usr/local/lib/node_modules"
-# Load phpenv
-export PATH="$HOME/.phpenv/bin:$PATH"
 
 # ==== TMUX ====
 _not_inside_tmux() { [[ -z "$TMUX" ]] }
@@ -21,4 +19,3 @@ ensure_tmux_is_running() {
 
 ensure_tmux_is_running
 eval "$(rbenv init - zsh --no-rehash)"
-eval "$(phpenv init -)"
