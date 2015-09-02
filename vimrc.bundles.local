@@ -1,11 +1,11 @@
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdtree'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
 
-Plugin 'rking/ag.vim' " Ag support for vim
-Plugin 'tpope/vim-dispatch' " Run tests from within vim
-Plugin 'christoomey/vim-tmux-navigator' " Tmux vim awareness
-Plugin 'jgdavey/tslime.vim' " Tmux dispatcher
-Plugin 'mxw/vim-jsx' " Jsx support for vim
-Plugin 'gertjanreynaert/cobalt2-vim-theme'
+Plug 'rking/ag.vim' " Ag support for vim
+Plug 'tpope/vim-dispatch' " Run tests from within vim
+Plug 'christoomey/vim-tmux-navigator' " Tmux vim awareness
+Plug 'jgdavey/tslime.vim' " Tmux dispatcher
+Plug 'mxw/vim-jsx' " Jsx support for vim
+Plug 'gertjanreynaert/cobalt2-vim-theme'
