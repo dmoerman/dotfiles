@@ -13,6 +13,7 @@
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
   create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
+  unstage = !git reset HEAD -- $1
   l = !git log --graph --pretty=colored
   pr = !git push -u && hub pull-request
   rbc = !git rebase --continue && git status
