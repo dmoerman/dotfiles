@@ -5,6 +5,9 @@ set nocompatible
 " Enable matching/closing types when using %
 runtime macros/matchit.vim
 
+" Remove trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Set font size & type
 set guifont=Monaco:h12
 

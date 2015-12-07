@@ -9,3 +9,4 @@ Plug 'christoomey/vim-tmux-navigator' " Tmux vim awareness
 Plug 'jgdavey/tslime.vim' " Tmux dispatcher
 Plug 'mxw/vim-jsx' " Jsx support for vim
 Plug 'gertjanreynaert/cobalt2-vim-theme'
+Plug 'elixir-lang/vim-elixir' " Elixir support
