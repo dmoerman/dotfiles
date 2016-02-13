@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# Prerequisites
+# - Thoughbot/laptop: https://github.com/thoughtbot/laptop
+
+if ! command -v diff-so-fancy > /dev/null; then
+  npm install -g diff-so-fancy
+fi
+
+# Brew installs
+brew install gnu-sed
+
+# Update and install dotfiles
+rcup

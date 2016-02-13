@@ -24,3 +24,4 @@
   tree = !git log --graph --decorate --pretty=oneline --abbrev-commit
   pp = !git pull && git push;
   lo = !git log --oneline --no-merges
+  dsf = !git diff --color $@ | diff-so-fancy
