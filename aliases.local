@@ -22,3 +22,23 @@ alias ctags="ctags -R --exclude=.git --exclude=log *"
 
 # Pretty print path
 alias path="echo $PATH | tr -s ':' '\n'"
+
+# MassiveMedia
+alias mmdocker-start="/Users/jensdebergh/Code/docker-tools/start.sh"
+alias mmdocker-exec="/Users/jensdebergh/Code/docker-tools/exec.sh"
+alias mmdocker-stop="/Users/jensdebergh/Code/docker-tools/stop.sh"
+alias mmdocker-restart="/Users/jensdebergh/Code/docker-tools/restart.sh"
+alias mmdocker-build="/Users/jensdebergh/Code/docker-tools/build.sh"
+alias mmdocker-kill="/Users/jensdebergh/Code/docker-tools/kill.sh"
+
+
+alias mm-log="mmdocker-exec 'php /opt/code/twoo/cli/taillog.php -r'"
+alias mm-jens="mmdocker-exec 'php -f /opt/code/twoo/cli/jens.php'"
+alias mm-kochava="mmdocker-exec 'php -f /opt/code/twoo/cli/kochava.php'"
+alias mm-thomas-script-live="mmdocker-exec 'php -f /opt/code/twoo/cli/thomas.php -r -bgj -e live'"
+alias mm-js="mmdocker-exec 'cd /opt/code/twoo && make template-compile-to-js-clean && make template-compile-to-js-en && make requirejs-clean && make requirejs-compile'"
+alias mm-template-compile="mmdocker-exec 'cd /opt/code/twoo && make template-compile-to-js-clean && make template-compile-to-js-en'"
+alias mm-sass="cd /Users/jensdebergh/Code/twoo && make sass"
+alias mm-sass-docker="mmdocker-exec 'cd /opt/code/twoo && make sass && make iconFont'"
+alias mm-jscompile="cd /Users/jensdebergh/Code/twoo && make jscompile"
+alias mm-template-en="mmdocker-exec 'cd /opt/code/twoo && grunt jsTplDev -l=en'"

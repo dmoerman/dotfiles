@@ -3,6 +3,8 @@
 # Prerequisites
 # - Thoughbot/laptop: https://github.com/thoughtbot/laptop
 
+rsync -av ./bin/* /usr/local/bin/ --exclude=setup
+
 # https://github.com/stevemao/diff-so-fancy
 if ! command -v diff-so-fancy > /dev/null; then
   npm install -g diff-so-fancy
