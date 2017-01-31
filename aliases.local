@@ -5,7 +5,6 @@ alias l="ls"
 alias ll="ls -al"
 alias mkdir="mkdir -p"
 alias -g M="| less"
-alias ssh-agent='eval "$(ssh-agent -s)"'
 
 # Bundler
 alias be="bundle exec"
