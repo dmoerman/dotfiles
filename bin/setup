@@ -15,6 +15,7 @@ fi
 # Brew installs
 brew install gnu-sed
 brew install wifi-password
+brew install less
 
 # Update and install dotfiles
 rcup
