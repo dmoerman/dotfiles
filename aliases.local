@@ -6,20 +6,15 @@ alias ll="ls -al"
 alias mkdir="mkdir -p"
 alias -g M="| less"
 
-# Bundler
-alias be="bundle exec"
-alias b="bundle"
-
-# Rails
-alias m="migrate"
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias rk="rake"
-alias s="rspec"
-alias annotate="annotate --position after --show-indexes --exclude tests,fixtures,factories"
-
-# Ctags
-alias ctags="ctags -R --exclude=.git --exclude=log *"
-
+#git
+alias ga="git add";
+alias gst="git status"
+alias gp="git push"
+alias gpl="git pull"
+alias gco="git checkout"
+alias gc="git commit"
+alias gm="git merge --no-ff"
+alias gv="git log --graph --full-history --all --color --pretty=tformat:\"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m\""
 # Pretty print path
 alias path="echo $PATH | tr -s ':' '\n'"
 
@@ -32,13 +27,10 @@ alias mmdocker-build="/Users/jensdebergh/Code/docker-tools/build.sh"
 alias mmdocker-kill="/Users/jensdebergh/Code/docker-tools/kill.sh"
 
 
-alias mm-log="mmdocker-exec 'php /opt/code/twoo/cli/taillog.php -r'"
-alias mm-jens="mmdocker-exec 'php -f /opt/code/twoo/cli/jens.php'"
-alias mm-kochava="mmdocker-exec 'php -f /opt/code/twoo/cli/kochava.php'"
-alias mm-thomas-script-live="mmdocker-exec 'php -f /opt/code/twoo/cli/thomas.php -r -bgj -e live'"
-alias mm-js="mmdocker-exec 'cd /opt/code/twoo && make template-compile-to-js-clean && make template-compile-to-js-en && make requirejs-clean && make requirejs-compile'"
-alias mm-template-compile="mmdocker-exec 'cd /opt/code/twoo && make template-compile-to-js-clean && make template-compile-to-js-en'"
-alias mm-sass="cd /Users/jensdebergh/Code/twoo && make sass"
-alias mm-sass-docker="mmdocker-exec 'cd /opt/code/twoo && make sass && make iconFont'"
-alias mm-jscompile="cd /Users/jensdebergh/Code/twoo && make jscompile"
-alias mm-template-en="mmdocker-exec 'cd /opt/code/twoo && grunt jsTplDev -l=en'"
+#heroku
+alias maintain="heroku maintenance:on"
+alias unmaintain="heroku maintenance:off"
+alias hup="heroku ps:scale web=1"
+alias hdown="heroku ps:scale web=0"
+alias hdeploy="git push heroku master"
+alias translate="mix gettext.extract --merge"

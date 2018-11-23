@@ -18,3 +18,7 @@ ensure_tmux_is_running() {
 ensure_tmux_is_running
 eval "$(rbenv init - zsh --no-rehash)"
 eval "$(rbenv init - --no-rehash zsh)"
+
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
