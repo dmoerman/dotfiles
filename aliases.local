@@ -18,15 +18,6 @@ alias gv="git log --graph --full-history --all --color --pretty=tformat:\"%x1b[3
 # Pretty print path
 alias path="echo $PATH | tr -s ':' '\n'"
 
-# MassiveMedia
-alias mmdocker-start="/Users/jensdebergh/Code/docker-tools/start.sh"
-alias mmdocker-exec="/Users/jensdebergh/Code/docker-tools/exec.sh"
-alias mmdocker-stop="/Users/jensdebergh/Code/docker-tools/stop.sh"
-alias mmdocker-restart="/Users/jensdebergh/Code/docker-tools/restart.sh"
-alias mmdocker-build="/Users/jensdebergh/Code/docker-tools/build.sh"
-alias mmdocker-kill="/Users/jensdebergh/Code/docker-tools/kill.sh"
-
-
 #heroku
 alias maintain="heroku maintenance:on"
 alias unmaintain="heroku maintenance:off"
