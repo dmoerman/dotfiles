@@ -10,6 +10,6 @@ Use in combination with
 
 ```
 git clone https://github.com/thoughtbot/dotfiles.git
-git clone https://github.com/jensdebergh/dotfiles.git dotfiles-local
+git clone https://github.com/dmoerman/dotfiles.git dotfiles-local
 env RCRC=$HOME/dotfiles/rcrc rcup
 ```
