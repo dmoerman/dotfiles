@@ -25,3 +25,11 @@ alias hup="heroku ps:scale web=1"
 alias hdown="heroku ps:scale web=0"
 alias hdeploy="git push heroku master"
 alias translate="mix gettext.extract --merge"
+
+#google cloud
+alias cloud="gcloud compute ssh"
+
+#mysql
+alias mup="sudo /usr/local/mysql/support-files/mysql.server start"
+alias mdown="sudo /usr/local/mysql/support-files/mysql.server stop"
+alias vmy="/usr/local/mysql/bin/mysql -v -uroot -p"
